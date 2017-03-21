@@ -12,7 +12,7 @@ if __name__ == '__main__':
     iris_x_test = iris_x[-10:]
     iris_y_test = iris_y[-10:]
 
-    nb = naive_bayes.GaussianNB()
+    nb = naive_bayes.BaseNB()
     nb.fit(iris_x_train, iris_y_train)
     print(nb.score(iris_x_test, iris_y_test))
 
